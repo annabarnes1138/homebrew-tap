@@ -5,20 +5,20 @@
 class YetAnotherChartReleaser < Formula
   desc "Yet Another Helm Chart Releaser"
   homepage "https://github.com/stecky/yet-another-chart-releaser/"
-  version "0.4.2"
+  version "0.4.3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.2/yet-another-chart-releaser_0.4.2_darwin_amd64.tar.gz"
-    sha256 "e9f48c5f9152e9d63dd75972c65ccf714ce6b5469bab24e9b504f81b213e465b"
+    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.3/yet-another-chart-releaser_0.4.3_darwin_amd64.tar.gz"
+    sha256 "c93f0716de613c89f53cbc125ff1cd4738c59f92f874b73d1f0ce08853b7e315"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.2/yet-another-chart-releaser_0.4.2_linux_amd64.tar.gz"
-    sha256 "6382550fd5b37f683dc3a8bb22cde084a32abfaa6a9b0e7aa71d8fa709ed98f2"
+    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.3/yet-another-chart-releaser_0.4.3_linux_amd64.tar.gz"
+    sha256 "c6564614e7a994dfa4464908d5d9363ec654635a14b4a35ad103d7a8c3ab7ec7"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.2/yet-another-chart-releaser_0.4.2_linux_armv6.tar.gz"
-    sha256 "bdbf7fc76e0935b588eb64162dc61f93db14f6708cbd6ee7f125edffef911ad2"
+    url "https://github.com/stecky/yet-another-chart-releaser/releases/download/v0.4.3/yet-another-chart-releaser_0.4.3_linux_armv6.tar.gz"
+    sha256 "1f84d44ae109a6b298b53c9e4a0ce2ec67d46cb2353f9be08add1a577ec50688"
   end
 
   def install
